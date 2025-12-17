@@ -773,6 +773,8 @@ body.app-body {
 
     .brand {
         grid-area: brand;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .brand__location {
@@ -781,7 +783,6 @@ body.app-body {
 
     .contact {
         grid-area: contact;
-        align-items: flex-end;
     }
 
     .hero__buttons {
@@ -798,11 +799,24 @@ body.app-body {
         width: 100%;
         justify-content: flex-start;
     }
+
+    .footer__top {
+        flex-wrap: wrap;
+    }
+
+    .footer__bottom {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 820px) {
     .hero__banner {
         height: 260px;
+        max-width: 100%;
+        margin: 0;
+        background-size: 100% 100%;
+        background-position: center;
     }
 
     .hero__top {
@@ -812,7 +826,6 @@ body.app-body {
             "location"
             "contact"
             "buttons";
-        gap: 10px;
     }
 
     .hero__buttons {
@@ -828,6 +841,10 @@ body.app-body {
 @media (max-width: 620px) {
     .hero__banner {
         border-radius: 0;
+        max-width: 100%;
+        margin: 0;
+        background-size: 100% 100%;
+        background-position: center;
     }
 
     .page-shell {
@@ -860,7 +877,11 @@ body.app-body {
 
 @media (max-width: 480px) {
     .hero__banner {
-        height: 200px;
+        height: 170px;
+        max-width: 100%;
+        margin: 0;
+        background-size: 100% 100%;
+        background-position: center;
     }
 
     .hero__content {
@@ -876,8 +897,9 @@ body.app-body {
             "location"
             "contact"
             "buttons";
-        gap: 8px;
+        justify-content: space-between;
         padding: 12px;
+        flex-wrap: wrap;
     }
 
     .brand__logo svg {
@@ -899,7 +921,7 @@ body.app-body {
     }
 
     .movie-card__media img {
-        height: 220px;
+        height: 396px;
     }
 
     .btn,
